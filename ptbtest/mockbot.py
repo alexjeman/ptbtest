@@ -190,7 +190,7 @@ class Mockbot(TelegramObject):
         return decorator
 
     def getMe(self, timeout=None, **kwargs):
-        self.bot = User(0, "Mockbot", last_name="Bot", username=self._username)
+        self.bot = User(0, "Mockbot", True, last_name="Bot", username=self._username)
         return self.bot
 
     @message
